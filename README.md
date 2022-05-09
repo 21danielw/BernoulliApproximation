@@ -3,4 +3,4 @@ The BernoulliApproximation contains Julia code that uses Bernoulli matrix polyno
 To run the Julia code:
 1. Fork this repository.
 2. Include the module BernoulliApproximation.jl in your code.
-3. Call the function bernoulli(A, m, k) in your code.
+3. Call the function bernoulli(A, mk, s) in your code.
