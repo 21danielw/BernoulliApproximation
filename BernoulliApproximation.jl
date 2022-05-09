@@ -1,7 +1,14 @@
 using OffsetArrays
 using JLD2
+"""
+italicB: A precomputed array of Bernoulli numbers 0 through 50
+alpha: A precomputed array of alpha values as specified in my paper
+"""
 italicB = load_object("./italicB.jld2")
 alpha = load_object("./alpha.jld2")
+"""
+A helper function that computes P_m_k as described in my paper.
+"""
 function P(mk, A)
     q = Int64(sqrt(mk))
     Ap = OffsetArray{Matrix{Float64}}(undef, 0:q)
@@ -21,6 +28,13 @@ function P(mk, A)
     end
     return (ℯ-1)*answer
 end
+"""
+Computes an approximation of e^A using Bernoulli polynomials and the parameters m_k and s specified in my paper.
+Parameters:
+A: A square matrix
+mk: The parameter m_k described in my paper
+s: The parameter s described in my paper
+"""
 function bernoulli(A, mk, s)
     B = P(mk, A/(2^s))
     for i in 1:1:s
