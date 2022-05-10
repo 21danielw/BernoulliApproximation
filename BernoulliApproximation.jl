@@ -1,3 +1,6 @@
+"""
+BernoulliApproximation.jl is a Julia module that contains the Julia functions P(mk, A) and bernoulli(A, mk, s).
+"""
 using OffsetArrays
 using JLD2
 """
