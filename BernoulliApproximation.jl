@@ -1,9 +1,9 @@
-"""
-BernoulliApproximation.jl is a Julia module that contains the Julia functions P(mk, A) and bernoulli(A, mk, s).
+#=
+BernoulliApproximation.jl is a Julia file that contains the Julia functions P(mk, A) and bernoulli(A, mk, s).
 bernoulli(A, mk, s) should be called by the user.
 P(mk, A) should not be directly called by the user.
 italicB and alpha also should not be directly used by the user.
-"""
+=#
 using OffsetArrays
 using JLD2
 """
