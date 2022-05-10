@@ -5,6 +5,8 @@ BernoulliApproximation.jl is a Julia module that contains the function bernoulli
 
 The two scratch notebooks in this repository should not be run by the user.
 
+alpha.jld2 and italicB.jld2 are constant Julia arrays and should not be modified by the user.
+
 Procedure for using the function bernoulli(A, mk, s):
 1. Fork this repository.
 2. Include the module BernoulliApproximation.jl in your Julia code.
